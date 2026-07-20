@@ -1,0 +1,49 @@
+{
+  "brand": {
+    "name": "Sri Lakshmi Srinivasa Kalakand Sweets & Hots",
+    "tagline": "Authentic Andhra Sweets, Made Fresh Every Day"
+  },
+  "nav": {
+    "home": "Home",
+    "items": "Items",
+    "offers": "Offers",
+    "gallery": "Gallery",
+    "about": "About",
+    "contact": "Contact Us"
+  },
+  "hero": {
+    "eyebrow": "Handcrafted Since Generations",
+    "title": "Authentic Andhra Sweets",
+    "subtitle": "Made Fresh Every Day",
+    "cta": "Explore Menu"
+  },
+  "categories": {
+    "sweets": "Sweets",
+    "hots": "Hots"
+  },
+  "whyUs": {
+    "title": "Why Choose Us",
+    "items": {
+      "milk": "Pure Milk",
+      "jaggery": "Organic Jaggery",
+      "handmade": "Handmade Daily",
+      "noPreservatives": "No Preservatives"
+    }
+  },
+  "process": {
+    "title": "Our Making Process",
+    "steps": ["Fresh Milk", "Slow Boiling", "Hand-Shaped Kalakand", "Careful Packing"]
+  },
+  "reviews": {
+    "title": "Customer Reviews"
+  },
+  "contact": {
+    "title": "Visit Us",
+    "getDirections": "Get Directions",
+    "callUs": "Call Us",
+    "whatsapp": "Order on WhatsApp"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
