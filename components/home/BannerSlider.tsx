@@ -105,14 +105,14 @@ export function BannerSlider() {
       <button
         aria-label="Previous"
         onClick={() => goTo(index - 1)}
-        className="absolute left-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-gold/40 bg-brown/40 text-ivory backdrop-blur-sm transition-colors hover:bg-brown/60 sm:flex"
+        className="absolute left-2 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-gold/40 bg-brown/50 text-lg text-ivory backdrop-blur-sm transition-colors hover:bg-brown/70 sm:left-3 sm:h-10 sm:w-10"
       >
         ‹
       </button>
       <button
         aria-label="Next"
         onClick={() => goTo(index + 1)}
-        className="absolute right-3 top-1/2 z-10 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-gold/40 bg-brown/40 text-ivory backdrop-blur-sm transition-colors hover:bg-brown/60 sm:flex"
+        className="absolute right-2 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-gold/40 bg-brown/50 text-lg text-ivory backdrop-blur-sm transition-colors hover:bg-brown/70 sm:right-3 sm:h-10 sm:w-10"
       >
         ›
       </button>

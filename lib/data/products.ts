@@ -52,6 +52,7 @@ export const products: Product[] = [
     descriptionEn: "A traditional variation with a distinct, aromatic finish.",
     descriptionTe: "విభిన్నమైన, సుగంధభరిత ముగింపుతో సాంప్రదాయ వైవిధ్యం.",
     price: "₹460/kg",
+    image: "/images/products/ajmeri-kalakand-real.jpg",
   },
   {
     slug: "mixed-white-roast-kalakand",
@@ -61,7 +62,7 @@ export const products: Product[] = [
     descriptionEn: "The best of both worlds in every piece.",
     descriptionTe: "ప్రతి ముక్కలోనూ రెండు రుచుల మేలు కలయిక.",
     price: "₹450/kg",
-    image: "/images/products/mix-kalakand.svg",
+    image: "/images/products/mixed-white-roast-kalakand-real.jpg",
   },
   {
     slug: "carrot-kalakand",
@@ -71,7 +72,7 @@ export const products: Product[] = [
     descriptionEn: "A festive twist on our classic kalakand.",
     descriptionTe: "మా క్లాసిక్ కలాకండ్‌కు పండుగ ట్విస్ట్.",
     price: "₹460/kg",
-    image: "/images/products/carrot-kalakand.svg",
+    image: "/images/products/carrot-kalakand-real.jpg",
   },
   {
     slug: "special-badam-milk",
@@ -81,6 +82,7 @@ export const products: Product[] = [
     descriptionEn: "Rich, chilled almond milk — a refreshing classic.",
     descriptionTe: "రిచ్, చల్లని బాదం పాలు — రిఫ్రెషింగ్ క్లాసిక్.",
     price: "₹60/glass",
+    isSpeciality: true,
     image: "/images/products/badam-milk-real.jpg",
   },
   {
@@ -91,16 +93,18 @@ export const products: Product[] = [
     descriptionEn: "Traditional Andhra urad dal laddus made with organic jaggery.",
     descriptionTe: "ఆర్గానిక్ బెల్లంతో తయారు చేసిన సాంప్రదాయ ఆంధ్ర మినపప్పు లడ్డూలు.",
     price: "₹400/kg",
+    isSpeciality: true,
     image: "/images/products/bellam-sunnundalu-real.jpg",
   },
   {
     slug: "boondi",
     nameEn: "Boondi",
     nameTe: "బూంది",
-    category: "sweets",
+    category: "hots",
     descriptionEn: "Classic gram-flour boondi, sweet and delicately spiced.",
     descriptionTe: "క్లాసిక్ శనగపిండి బూంది, తీపిగా మరియు సున్నితంగా మసాలా వేయబడింది.",
     price: "₹360/kg",
+    image: "/images/products/boondi-real.jpg",
   },
   {
     slug: "murukulu",
@@ -120,6 +124,7 @@ export const products: Product[] = [
     descriptionEn: "Thin, crunchy rice crackers with a savory kick.",
     descriptionTe: "సన్నని, క్రంచీ బియ్యం క్రాకర్స్ రుచికరమైన కిక్‌తో.",
     price: "₹300/kg",
+    image: "/images/products/chekkalu-real.jpg",
   },
   {
     slug: "masala-palli",
@@ -129,6 +134,7 @@ export const products: Product[] = [
     descriptionEn: "Roasted peanuts coated in a spiced batter.",
     descriptionTe: "మసాలా పిండితో కప్పబడిన వేయించిన వేరుశెనగలు.",
     price: "₹280/kg",
+    image: "/images/products/masala-palli-real.jpg",
   },
   {
     slug: "dal-mudi",
@@ -138,6 +144,7 @@ export const products: Product[] = [
     descriptionEn: "A crunchy lentil-based savory mix.",
     descriptionTe: "క్రంచీ పప్పు ఆధారిత రుచికరమైన మిక్స్.",
     price: "₹300/kg",
+    image: "/images/products/dal-mudi-real.jpg",
   },
   {
     slug: "chakodi",
@@ -147,6 +154,7 @@ export const products: Product[] = [
     descriptionEn: "Ring-shaped, deep-fried savory snack.",
     descriptionTe: "రింగ్ ఆకారంలో, డీప్ ఫ్రై చేసిన రుచికరమైన స్నాక్.",
     price: "₹320/kg",
+    image: "/images/products/chakodi-real.jpg",
   },
   {
     slug: "mixture",
@@ -156,5 +164,6 @@ export const products: Product[] = [
     descriptionEn: "Our house blend of crunchy savories, a customer favorite.",
     descriptionTe: "క్రంచీ రుచికరమైన పదార్థాల మా సొంత మిక్స్, కస్టమర్ ఫేవరెట్.",
     price: "₹300/kg",
+    image: "/images/products/mixture-real.jpg",
   },
 ];
