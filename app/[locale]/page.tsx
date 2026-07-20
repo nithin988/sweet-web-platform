@@ -16,7 +16,7 @@ export default function HomePage() {
   return (
     <SmoothScrollProvider>
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 pt-16">
         <Hero />
         <TrustBar />
         <CategoryTiles />

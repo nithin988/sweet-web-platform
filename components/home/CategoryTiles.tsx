@@ -4,10 +4,10 @@ import { motion } from "motion/react";
 import { useTranslations } from "next-intl";
 
 const TILES = [
-  { key: "kalakand", emoji: "🍮" },
-  { key: "traditional", emoji: "🪔" },
-  { key: "drinks", emoji: "🥛" },
-  { key: "hots", emoji: "🌶️" },
+  { key: "kalakand", image: "/images/products/organic-jaggery-kalakand-real.jpg" },
+  { key: "traditional", image: "/images/products/bellam-sunnundalu-real.jpg" },
+  { key: "drinks", image: "/images/products/badam-milk-real.jpg" },
+  { key: "hots", image: "/images/products/hots-collection.jpg" },
 ] as const;
 
 export function CategoryTiles() {
@@ -28,15 +28,23 @@ export function CategoryTiles() {
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
             whileHover={{ y: -4 }}
-            className="group flex flex-col items-center gap-3 rounded-2xl border border-gold/20 bg-gradient-to-b from-ivory to-cream p-6 text-center shadow-sm transition-all hover:-translate-y-0 hover:border-maroon/40 hover:shadow-lg hover:shadow-maroon/10"
+            className="group overflow-hidden rounded-2xl border border-gold/20 bg-gradient-to-b from-ivory to-cream text-center shadow-sm transition-all hover:border-maroon/40 hover:shadow-lg hover:shadow-maroon/10"
           >
-            <span className="text-3xl transition-transform group-hover:scale-110">
-              {tile.emoji}
-            </span>
-            <span className="font-display text-base text-brown">
-              {t(`${tile.key}.title`)}
-            </span>
-            <span className="text-xs text-brown-soft">{t(`${tile.key}.desc`)}</span>
+            <div className="aspect-square w-full overflow-hidden">
+              <img
+                src={tile.image}
+                alt={t(`${tile.key}.title`)}
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div className="p-4">
+              <span className="font-display text-base text-brown">
+                {t(`${tile.key}.title`)}
+              </span>
+              <span className="mt-1 block text-xs text-brown-soft">
+                {t(`${tile.key}.desc`)}
+              </span>
+            </div>
           </motion.a>
         ))}
       </div>

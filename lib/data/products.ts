@@ -22,7 +22,7 @@ export const products: Product[] = [
     descriptionTe: "మా ప్రత్యేకత — స్వచ్ఛమైన పాలు మరియు ఆర్గానిక్ బెల్లంతో చేతితో తయారు చేయబడింది.",
     price: "₹480/kg",
     isSpeciality: true,
-    image: "/images/products/organic-jaggery-kalakand.svg",
+    image: "/images/products/organic-jaggery-kalakand-real.jpg",
   },
   {
     slug: "white-kalakand",
@@ -32,7 +32,7 @@ export const products: Product[] = [
     descriptionEn: "Classic milk kalakand, soft and rich in every bite.",
     descriptionTe: "క్లాసిక్ పాల కలాకండ్, ప్రతి బైట్‌లోనూ మృదువుగా మరియు రిచ్‌గా ఉంటుంది.",
     price: "₹420/kg",
-    image: "/images/products/white-kalakand.svg",
+    image: "/images/products/white-kalakand-real.jpg",
   },
   {
     slug: "roast-kalakand",
@@ -42,7 +42,7 @@ export const products: Product[] = [
     descriptionEn: "Slow-roasted for a deep, caramelized flavor.",
     descriptionTe: "లోతైన, కారామెలైజ్డ్ రుచి కోసం నెమ్మదిగా వేయించబడింది.",
     price: "₹440/kg",
-    image: "/images/products/roast-kalakand.svg",
+    image: "/images/products/roast-kalakand-real.jpg",
   },
   {
     slug: "ajmeri-kalakand",
@@ -81,7 +81,7 @@ export const products: Product[] = [
     descriptionEn: "Rich, chilled almond milk — a refreshing classic.",
     descriptionTe: "రిచ్, చల్లని బాదం పాలు — రిఫ్రెషింగ్ క్లాసిక్.",
     price: "₹60/glass",
-    image: "/images/products/badam-milk.svg",
+    image: "/images/products/badam-milk-real.jpg",
   },
   {
     slug: "sunnundalu",
@@ -91,7 +91,7 @@ export const products: Product[] = [
     descriptionEn: "Traditional Andhra urad dal laddus made with organic jaggery.",
     descriptionTe: "ఆర్గానిక్ బెల్లంతో తయారు చేసిన సాంప్రదాయ ఆంధ్ర మినపప్పు లడ్డూలు.",
     price: "₹400/kg",
-    image: "/images/products/bellam-sunnundalu.svg",
+    image: "/images/products/bellam-sunnundalu-real.jpg",
   },
   {
     slug: "boondi",
@@ -110,6 +110,7 @@ export const products: Product[] = [
     descriptionEn: "Crispy, spiral-shaped rice flour snack.",
     descriptionTe: "క్రిస్పీ, స్పైరల్ ఆకారపు బియ్యప్పిండి స్నాక్.",
     price: "₹320/kg",
+    image: "/images/products/hots-collection.jpg",
   },
   {
     slug: "chekkalu",
