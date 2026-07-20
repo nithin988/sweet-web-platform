@@ -3,9 +3,9 @@
 import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { useLocale, useTranslations } from "next-intl";
-import { products, type ProductCategory } from "@/lib/data/products";
+import type { Product, ProductCategory } from "@/lib/data/products";
 
-export function ItemsSection() {
+export function ItemsSection({ products }: { products: Product[] }) {
   const t = useTranslations("categories");
   const locale = useLocale();
   const [category, setCategory] = useState<ProductCategory>("sweets");
@@ -17,7 +17,7 @@ export function ItemsSection() {
         (p) =>
           p.category === category && (!onlySpeciality || p.isSpeciality)
       ),
-    [category, onlySpeciality]
+    [products, category, onlySpeciality]
   );
 
   return (

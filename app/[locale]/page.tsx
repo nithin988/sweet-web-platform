@@ -11,8 +11,13 @@ import { Gallery } from "@/components/home/Gallery";
 import { AboutStory } from "@/components/home/AboutStory";
 import { Reviews } from "@/components/home/Reviews";
 import { Contact } from "@/components/home/Contact";
+import { getPublicProducts } from "@/lib/supabase/queries";
+import { products as staticProducts } from "@/lib/data/products";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const dbProducts = await getPublicProducts();
+  const products = dbProducts.length > 0 ? dbProducts : staticProducts;
+
   return (
     <SmoothScrollProvider>
       <Header />
@@ -20,7 +25,7 @@ export default function HomePage() {
         <Hero />
         <TrustBar />
         <CategoryTiles />
-        <ItemsSection />
+        <ItemsSection products={products} />
         <WhyUs />
         <Process />
         <Gallery />
