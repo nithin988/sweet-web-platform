@@ -72,14 +72,24 @@ export function ItemsSection() {
               whileHover={{ y: -6 }}
               className="group overflow-hidden rounded-2xl border border-gold/15 bg-ivory shadow-sm transition-shadow hover:shadow-lg hover:shadow-gold/10"
             >
-              <div className="flex aspect-4/3 items-center justify-center bg-gradient-to-br from-brown/10 to-gold/10 text-brown-soft/40">
-                <span className="text-xs uppercase tracking-widest">
-                  Photo coming soon
-                </span>
-              </div>
+              {item.image ? (
+                <div className="aspect-4/3 overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt={locale === "te" ? item.nameTe : item.nameEn}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+              ) : (
+                <div className="flex aspect-4/3 items-center justify-center bg-gradient-to-br from-brown/10 to-gold/10 text-brown-soft/40">
+                  <span className="text-xs uppercase tracking-widest">
+                    Photo coming soon
+                  </span>
+                </div>
+              )}
               <div className="p-5">
                 {item.isSpeciality && (
-                  <span className="mb-2 inline-block rounded-full bg-gold-light/30 px-2 py-0.5 text-xs font-medium text-gold-dark">
+                  <span className="mb-2 inline-block rounded-full bg-maroon px-2 py-0.5 text-xs font-medium text-gold-light">
                     Speciality
                   </span>
                 )}

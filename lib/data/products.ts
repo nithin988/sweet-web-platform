@@ -9,6 +9,7 @@ export type Product = {
   descriptionTe: string;
   price: string;
   isSpeciality?: boolean;
+  image?: string;
 };
 
 export const products: Product[] = [
@@ -21,6 +22,7 @@ export const products: Product[] = [
     descriptionTe: "మా ప్రత్యేకత — స్వచ్ఛమైన పాలు మరియు ఆర్గానిక్ బెల్లంతో చేతితో తయారు చేయబడింది.",
     price: "₹480/kg",
     isSpeciality: true,
+    image: "/images/products/organic-jaggery-kalakand.svg",
   },
   {
     slug: "white-kalakand",
@@ -30,6 +32,7 @@ export const products: Product[] = [
     descriptionEn: "Classic milk kalakand, soft and rich in every bite.",
     descriptionTe: "క్లాసిక్ పాల కలాకండ్, ప్రతి బైట్‌లోనూ మృదువుగా మరియు రిచ్‌గా ఉంటుంది.",
     price: "₹420/kg",
+    image: "/images/products/white-kalakand.svg",
   },
   {
     slug: "roast-kalakand",
@@ -39,6 +42,7 @@ export const products: Product[] = [
     descriptionEn: "Slow-roasted for a deep, caramelized flavor.",
     descriptionTe: "లోతైన, కారామెలైజ్డ్ రుచి కోసం నెమ్మదిగా వేయించబడింది.",
     price: "₹440/kg",
+    image: "/images/products/roast-kalakand.svg",
   },
   {
     slug: "ajmeri-kalakand",
@@ -57,6 +61,7 @@ export const products: Product[] = [
     descriptionEn: "The best of both worlds in every piece.",
     descriptionTe: "ప్రతి ముక్కలోనూ రెండు రుచుల మేలు కలయిక.",
     price: "₹450/kg",
+    image: "/images/products/mix-kalakand.svg",
   },
   {
     slug: "carrot-kalakand",
@@ -66,6 +71,7 @@ export const products: Product[] = [
     descriptionEn: "A festive twist on our classic kalakand.",
     descriptionTe: "మా క్లాసిక్ కలాకండ్‌కు పండుగ ట్విస్ట్.",
     price: "₹460/kg",
+    image: "/images/products/carrot-kalakand.svg",
   },
   {
     slug: "special-badam-milk",
@@ -75,6 +81,7 @@ export const products: Product[] = [
     descriptionEn: "Rich, chilled almond milk — a refreshing classic.",
     descriptionTe: "రిచ్, చల్లని బాదం పాలు — రిఫ్రెషింగ్ క్లాసిక్.",
     price: "₹60/glass",
+    image: "/images/products/badam-milk.svg",
   },
   {
     slug: "sunnundalu",
@@ -84,6 +91,7 @@ export const products: Product[] = [
     descriptionEn: "Traditional Andhra urad dal laddus made with organic jaggery.",
     descriptionTe: "ఆర్గానిక్ బెల్లంతో తయారు చేసిన సాంప్రదాయ ఆంధ్ర మినపప్పు లడ్డూలు.",
     price: "₹400/kg",
+    image: "/images/products/bellam-sunnundalu.svg",
   },
   {
     slug: "boondi",

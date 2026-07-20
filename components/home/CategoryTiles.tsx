@@ -28,7 +28,7 @@ export function CategoryTiles() {
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
             whileHover={{ y: -4 }}
-            className="group flex flex-col items-center gap-3 rounded-2xl border border-gold/20 bg-gradient-to-b from-ivory to-cream p-6 text-center shadow-sm transition-shadow hover:shadow-lg hover:shadow-gold/10"
+            className="group flex flex-col items-center gap-3 rounded-2xl border border-gold/20 bg-gradient-to-b from-ivory to-cream p-6 text-center shadow-sm transition-all hover:-translate-y-0 hover:border-maroon/40 hover:shadow-lg hover:shadow-maroon/10"
           >
             <span className="text-3xl transition-transform group-hover:scale-110">
               {tile.emoji}

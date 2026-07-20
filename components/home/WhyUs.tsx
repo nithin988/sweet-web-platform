@@ -10,7 +10,7 @@ export function WhyUs() {
   const t = useTranslations("whyUs");
 
   return (
-    <section className="bg-brown py-24 text-ivory">
+    <section className="bg-gradient-to-b from-brown to-maroon-dark py-24 text-ivory">
       <div className="mx-auto max-w-5xl px-5">
         <h2 className="mb-12 text-center font-display text-3xl">{t("title")}</h2>
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">

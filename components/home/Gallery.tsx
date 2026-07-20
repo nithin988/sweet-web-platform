@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import { heroSlides } from "@/lib/data/heroSlides";
 
 export function Gallery() {
   return (
@@ -10,16 +11,20 @@ export function Gallery() {
           Gallery
         </h2>
         <div className="columns-2 gap-4 sm:columns-3">
-          {Array.from({ length: 6 }).map((_, i) => (
+          {heroSlides.map((slide, i) => (
             <motion.div
-              key={i}
+              key={slide.slug}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.6, delay: i * 0.08 }}
-              className="mb-4 flex aspect-square items-center justify-center break-inside-avoid rounded-xl bg-gradient-to-br from-brown/10 to-gold/15 text-brown-soft/40"
+              className="mb-4 overflow-hidden break-inside-avoid rounded-xl border border-gold/15"
             >
-              <span className="text-xs uppercase tracking-widest">Photo</span>
+              <img
+                src={slide.image}
+                alt={slide.nameEn}
+                className="aspect-square w-full object-cover"
+              />
             </motion.div>
           ))}
         </div>

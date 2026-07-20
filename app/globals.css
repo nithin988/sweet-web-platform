@@ -10,6 +10,9 @@
   --color-brown: #3d2b1f;
   --color-brown-light: #6b4f3a;
   --color-brown-soft: #8a6d54;
+  --color-maroon: #6b1423;
+  --color-maroon-light: #8f2233;
+  --color-maroon-dark: #4a0d18;
 
   --background: var(--color-cream);
   --foreground: var(--color-brown);
@@ -27,6 +30,9 @@
   --color-brown: var(--color-brown);
   --color-brown-light: var(--color-brown-light);
   --color-brown-soft: var(--color-brown-soft);
+  --color-maroon: var(--color-maroon);
+  --color-maroon-light: var(--color-maroon-light);
+  --color-maroon-dark: var(--color-maroon-dark);
 
   --font-display: var(--font-playfair);
   --font-sans: var(--font-inter);
