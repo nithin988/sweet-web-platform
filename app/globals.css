@@ -37,6 +37,7 @@
   --font-display: var(--font-playfair);
   --font-sans: var(--font-inter);
   --font-telugu: var(--font-noto-telugu);
+  --font-telugu-display: var(--font-telugu-display);
 }
 
 body {
@@ -48,4 +49,17 @@ body {
 ::selection {
   background: var(--color-gold-light);
   color: var(--color-brown);
+}
+
+@keyframes kenburns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+.animate-kenburns {
+  animation: kenburns 4.6s ease-out forwards;
 }

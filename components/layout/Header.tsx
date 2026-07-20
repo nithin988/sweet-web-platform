@@ -18,9 +18,13 @@ export function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-gold/10 bg-cream/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-        <span className="font-display text-lg tracking-tight text-brown sm:text-xl">
-          Sri Lakshmi Srinivasa
-        </span>
+        <a href="#home" className="flex items-center gap-2">
+          <img
+            src="/images/brand/logo.jpg"
+            alt="Sri Lakshmi Srinivasa Kalakand Sweets & Hots"
+            className="h-10 w-auto rounded-md border border-gold/30 object-cover sm:h-11"
+          />
+        </a>
         <nav className="hidden gap-6 text-sm text-brown-soft md:flex">
           {NAV_LINKS.map((link) => (
             <a key={link.href} href={link.href} className="hover:text-gold-dark transition-colors">

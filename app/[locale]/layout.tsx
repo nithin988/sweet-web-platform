@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter, Noto_Sans_Telugu } from "next/font/google";
+import { Playfair_Display, Inter, Noto_Sans_Telugu, Ramabhadra } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -19,6 +19,12 @@ const notoTelugu = Noto_Sans_Telugu({
   variable: "--font-noto-telugu",
   subsets: ["telugu"],
   weight: ["400", "500", "600", "700"],
+});
+
+const ramabhadra = Ramabhadra({
+  variable: "--font-telugu-display",
+  subsets: ["telugu"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -46,7 +52,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${playfair.variable} ${inter.variable} ${notoTelugu.variable} h-full antialiased`}
+      className={`${playfair.variable} ${inter.variable} ${notoTelugu.variable} ${ramabhadra.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-brown">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
