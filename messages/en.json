@@ -21,6 +21,24 @@
     "sweets": "Sweets",
     "hots": "Hots"
   },
+  "trustBar": {
+    "rating": "5.0 Rated on Google",
+    "milk": "100% Pure Milk",
+    "handmade": "Handmade Fresh Daily",
+    "recipes": "Traditional Andhra Recipes"
+  },
+  "categoryTiles": {
+    "title": "Explore Our Range",
+    "kalakand": { "title": "Kalakand Varieties", "desc": "Six handcrafted styles, one signature taste" },
+    "traditional": { "title": "Traditional Sweets", "desc": "Sunnundalu, boondi & timeless classics" },
+    "drinks": { "title": "Badam Milk", "desc": "Rich, chilled, made fresh every day" },
+    "hots": { "title": "Hots & Snacks", "desc": "Crunchy, savory Andhra favorites" }
+  },
+  "about": {
+    "eyebrow": "Our Story",
+    "title": "A Trusted Name for Authentic Andhra Sweets",
+    "body": "Sri Lakshmi Srinivasa Kalakand Sweets & Hots is an authentic Andhra sweet shop specializing in handcrafted Kalakand made using pure milk and traditional methods. We focus on freshness, quality ingredients, and authentic taste — bringing customers premium sweets and savory snacks that remind them of homemade Andhra flavors."
+  },
   "whyUs": {
     "title": "Why Choose Us",
     "items": {

@@ -16,6 +16,7 @@ export function Header() {
           <a href="#home" className="hover:text-gold-dark transition-colors">{t("home")}</a>
           <a href="#items" className="hover:text-gold-dark transition-colors">{t("items")}</a>
           <a href="#gallery" className="hover:text-gold-dark transition-colors">{t("gallery")}</a>
+          <a href="#about" className="hover:text-gold-dark transition-colors">{t("about")}</a>
           <a href="#contact" className="hover:text-gold-dark transition-colors">{t("contact")}</a>
         </nav>
         <LanguageSwitch />
