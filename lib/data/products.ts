@@ -139,4 +139,13 @@ export const products: Product[] = [
     descriptionTe: "రింగ్ ఆకారంలో, డీప్ ఫ్రై చేసిన రుచికరమైన స్నాక్.",
     price: "₹320/kg",
   },
+  {
+    slug: "mixture",
+    nameEn: "Mixture",
+    nameTe: "మిక్చర్",
+    category: "hots",
+    descriptionEn: "Our house blend of crunchy savories, a customer favorite.",
+    descriptionTe: "క్రంచీ రుచికరమైన పదార్థాల మా సొంత మిక్స్, కస్టమర్ ఫేవరెట్.",
+    price: "₹300/kg",
+  },
 ];
